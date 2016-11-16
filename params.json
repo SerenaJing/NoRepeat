@@ -1,0 +1,6 @@
+{
+  "name": "Norepeat",
+  "tagline": "It is applied on array by JS lanaguage .",
+  "body": "### 删除一维数组中的重复项\r\n    function hasRepeat(ary)\r\n    {\r\n        var nary=ary.sort();\r\n        for(var i=0;i<ary.length-1;i++){\r\n        if (ary[i]==ary[i+1]){\r\n            ary.splice(i,1);\r\n            i--;\r\n            }\r\n        }\r\n        return ary;\r\n    }\r\n### 删除二维数组中重复的一维数组\r\n    function Distict(arr)\r\n    {\r\n        var hash = {};  \r\n        var result = [];  \r\n        for(var i=0; i < arr.length; i++){  \r\n            if(!hash[arr[i]]){  \r\n               result.push(arr[i]);  \r\n               hash[arr[i]] = true;  \r\n            }  \r\n        }\r\n        return result; \r\n    }\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
